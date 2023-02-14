@@ -1,0 +1,28 @@
+{
+    "name": "artarts36/array-file-system",
+    "type": "library",
+    "autoload": {
+        "psr-4": {
+            "ArtARTs36\\FileSystem\\Arrays\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "artarts36",
+            "email": "temicska99@mail.ru"
+        }
+    ],
+    "require": {
+        "php": "^8",
+        "artarts36/file-system-contracts": "^0.2.0"
+    },
+    "require-dev": {
+        "phpstan/phpstan": "^1.9",
+        "phpunit/phpunit": "^10.0"
+    },
+    "scripts": {
+        "stat-analyse": [
+            "./vendor/bin/phpstan analyse -l 8 src"
+        ]
+    }
+}
